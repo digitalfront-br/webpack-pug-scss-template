@@ -1,0 +1,7 @@
+// 3. Your custom mixin overwrites.
+@mixin hook-card() {
+	color: #000;
+}
+@mixin hook-logo() {
+	width: 200px;
+}

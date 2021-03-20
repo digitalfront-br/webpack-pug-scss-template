@@ -1,0 +1,69 @@
+html {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+  color: #535780;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+::selection {
+	background: $global-secondary-background;
+	color: $global-muted-background;
+	text-shadow: none;
+}
+.uk-light {
+  .uk-logo svg{
+    fill: #fff;
+  }
+	.uk-navbar-nav > li {
+		margin-left: 15px;
+		a {
+			border: 1px solid #fff;
+			color: #fff;
+			min-height: 30px;
+			text-transform: capitalize;
+			line-height: 100%;
+			padding: auto;
+			border-radius: 20px;
+		}
+	}
+}
+.uk-dark {
+  .uk-logo svg{
+    fill: $global-primary-background;
+  }
+	.uk-navbar-nav > li {
+		margin-left: 15px;
+		a {
+			border: 1px solid $global-primary-background;
+			color: $global-primary-background;
+			min-height: 30px;
+			text-transform: capitalize;
+			line-height: 100%;
+			padding: auto;
+			border-radius: 20px;
+		}
+	}
+}
+.reserva {
+	margin-bottom: -30% !important;
+}
+hr.uk-text-primary {
+	width: 40px;
+	float: left;
+	border-color: $global-secondary-background;
+}
+
+.uk-grid-arrow > :not(.uk-first-column)::before {
+  content: "->";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+}
+.uk-icon-button {
+	width: 50px;
+	height: 50px;
+}

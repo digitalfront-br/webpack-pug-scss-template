@@ -1,0 +1,32 @@
+header.uk-sticky(uk-sticky="animation: uk-animation-slide-top; top: 300; cls-inactive: uk-background-primary uk-light; cls-active: uk-box-shadow-small uk-navbar-sticky uk-dark uk-background-default")
+  .uk-container
+    nav.uk-navbar
+      .uk-navbar-item.uk-flex.uk-flex-between(class="uk-hidden@s")
+        div
+          a.uk-logo(href='../')
+            img.uk-margin-small-right(uk-svg="", style="width: 130px" src='src/img/logo.svg')
+        div
+          ul.uk-navbar-nav
+            li
+              a(class="uk-button uk-button-default", href='../pro') 
+                span(uk-icon='icon: user; ratio: 0.8')
+            li
+              a(class="uk-button uk-button-default", href='./') Cadastre-se
+      .uk-navbar-left(class="uk-visible@s")
+        .uk-navbar-item
+          a.uk-logo(href='../')
+            img.uk-margin-small-right(uk-svg="", src='src/img/logo.svg')
+      .uk-navbar-right(class="uk-visible@s")
+        .uk-navbar-item
+          ul.uk-navbar-nav
+            li
+              a(class="uk-button uk-button-default", href='../pro') 
+                span(uk-icon='icon: user; ratio: 0.8')
+            li
+              a(class="uk-button uk-button-default", href='./') Cadastre-se
+.uk-position-relative
+  div(class="uk-section uk-background-primary")
+    .uk-container
+      include ./slideshow.pug
+  
+      

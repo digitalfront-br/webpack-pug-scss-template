@@ -5,5 +5,12 @@ html(lang='pt-br')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     title Document
-  body
-      h1 Hola
+  body(class="uk-text-center uk-text-left@m")
+    include ./components/header.pug
+    include ./components/passos.pug
+    include ./components/benefits.pug
+    include ./components/partnes.pug
+    include ./components/testimonial.pug
+    include ./components/footer.pug
+    script(src='https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js')
