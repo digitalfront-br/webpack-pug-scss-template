@@ -3,5 +3,18 @@
 	color: #000;
 }
 @mixin hook-logo() {
-	width: 200px;
+	width: auto;
+}
+@mixin hook-button() {
+	text-transform: none;
+}
+
+@mixin hook-button-default() {
+	border: 2px solid;
+	color: $global-primary-background;
+	font-weight: 500;
+}
+
+@mixin hook-inverse-button-secondary() {
+	color: $global-primary-background;
 }

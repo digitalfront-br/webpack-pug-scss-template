@@ -1,31 +1,24 @@
-section.uk-section.uk-section-muted.uk-container(uk-slider='')
-  div.uk-flex.uk-flex-between
-    p.uk-text-secondary Depoimentos
+section.uk-section.uk-section-muted
+  .uk-container
     div
-      a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small.uk-margin-small-right(href='#'  uk-slider-item='previous')
-        span(uk-icon='icon: arrow-left; ratio: 1')
-      a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small(href='#'  uk-slider-item='next')
-        span(uk-icon='icon: arrow-right; ratio: 1')
-      //- a.uk-position-center-left.uk-position-small(href='#' uk-slidenav-previous='' uk-slider-item='previous') ss
-      //- a.uk-position-center-right.uk-position-small(href='#' uk-slidenav-next='' uk-slider-item='next') ss
-  div
-    hr.uk-text-primary
-  section.uk-flex.uk-flex-between.uk-flex-middle.uk-background-cover.uk-grid-small.uk-grid.uk-margin-top(uk-grid='')
-    .uk-width-1-1.uk-light
-      hr(style="width: 40px")
-    .uk-width-1-1(class='uk-width-1-2@s')
-      img(src="src/img/img10.png", class="reserva2",alt="")
-    .uk-width-1-1(class='uk-width-1-2@s')
-      h2.uk-text-bold.uk-h1.uk-text-primary.uk-margin-medium-bottom Simplificamos o processo para você ser encontrado mais rápido.
-      div
-        - var passos = [{icon: "$", id: 1, title:"Totalmente Gratuito", text: "Sem qualquer custo, do cadastro à contratação."}, {icon: "phone", id: 2, title:"Processo de recrutamento digital", text: "Entrevistas e repositório de documentos 100% digitais"}, {icon: "user", id: 3, title:"As vagas encontram você", text: "Preencha seu perfil uma vez e os recrutadores te encontram"}]
-        each item in passos
-          div.uk-position-relative.uk-flex.uk-margin-medium-bottom
-            div.uk-margin-right
-              if item.id == 1
-                span.uk-h2.uk-text-light.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small=item.icon
-              else
-                span.uk-icon-button.uk-background-secondary.uk-light(uk-icon='ratio: 1.1; icon: '+item.icon)
-            div
-              h3.uk-text-bold.uk-text-primary.uk-margin-remove=item.title
-              p.uk-margin-remove=item.text
+      p.uk-text-secondary Vantagens Dr. Recruta
+      div.uk-margin-bottom
+        hr.uk-text-primary(class="uk-text-center@s")
+  .uk-container
+    .uk-grid(uk-grid='')
+      .uk-width-1-1.uk-light
+        hr(style="width: 40px")
+      .uk-width-1-1.uk-margin-remove(class='uk-width-1-2@s')
+        img(src="src/img/img10.png", class="reserva2",alt="")
+      .uk-width-1-1(class='uk-width-1-2@s')
+        h2.uk-text-bold.uk-h1.uk-text-primary.uk-margin-medium-bottom.text-dark Simplificamos o processo para você ser encontrado mais rápido.
+        div
+          - var benefits = [{icon: "src/img/5.svg", id: 1, title:"Totalmente Gratuito", text: "Sem qualquer custo, do cadastro à contratação."}, {icon: "src/img/6.svg", id: 2, title:"Processo de recrutamento digital", text: "Entrevistas e repositório de documentos 100% digitais"}, {icon: "src/img/1.svg", id: 3, title:"As vagas encontram você", text: "Preencha seu perfil uma vez e os recrutadores te encontram"}]
+          each item in benefits
+            div.uk-position-relative.uk-grid-small.uk-margin-medium-bottom(uk-grid="")
+              div(class="uk-width-1-5@m uk-width-1-1")
+                span.uk-h2.uk-text-light.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small.uk-margin-right
+                  img.icone( src=item.icon alt='')
+              div(class="uk-width-4-5@m uk-width-1-1")
+                h3.uk-text-bold.uk-text-primary.uk-margin-remove=item.title
+                p.uk-margin-remove=item.text

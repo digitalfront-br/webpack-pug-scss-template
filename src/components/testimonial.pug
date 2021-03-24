@@ -1,32 +1,29 @@
-section.uk-section.uk-section-muted.uk-container(uk-slider='')
-  div.uk-flex.uk-flex-between
-    p.uk-text-secondary Depoimentos
+section.uk-section.uk-section-muted(class='js-slideshow-animation uk-slideshow', uk-slideshow=' ratio: 16:9; min-height: 200; max-height: 500', animation='uk-scale')
+  .uk-container
+    .uk-flex.uk-flex-between
+      div
+        p.uk-text-secondary Depoimentos 
+        div.uk-margin-bottom
+          hr.uk-text-primary(class="uk-text-center@s")
     div
-      a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small.uk-margin-small-right(href='#'  uk-slider-item='previous')
-        span(uk-icon='icon: arrow-left; ratio: 1')
-      a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small(href='#'  uk-slider-item='next')
-        span(uk-icon='icon: arrow-right; ratio: 1')
-      //- a.uk-position-center-left.uk-position-small(href='#' uk-slidenav-previous='' uk-slider-item='previous') ss
-      //- a.uk-position-center-right.uk-position-small(href='#' uk-slidenav-next='' uk-slider-item='next') ss
-  div
-    hr.uk-text-primary
-  div.uk-margin-medium-bottom
-    h3.uk-text-primary.uk-margin-remove Veja o que dizem sobre nós
-  div.uk-position-relative.uk-visible-toggle
-    ul.uk-slider-items.uk-child-width-1-1(class='uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l')
-      - var passos = [{id: 1, img: "src/img/img7.png", name:"Maria Carla", text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy."}, {id: 2, img: "src/img/img8.png", name:"Rodrigo Maia", text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy."}, {id: 3, img: "src/img/img9.png", name:"Jair Batista", text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy."}]
+      h3.uk-text-primary.uk-margin-remove Veja o que dizem sobre nós
+  .uk-container.uk-position-relative
+    ul.uk-slideshow-items.uk-height-medium
+      - var passos = [{id: 1, img: "src/img/img7.png", name:"Maria Carla", text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy."}, {id: 2, img: "src/img/img8.png", name:"Rodrigo Maia", text: "Text of the printing and typesetting industry. Lorem Ipsum has been the industry´s  and typesetting industry. Lorem Ipsum has been the industry´s  and typesetting industry. Lorem Ipsum has been the industry´s standard dummy."}, {id: 3, img: "src/img/img9.png", name:"Jair Batista", text: "dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dumm Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy."}]
       each item in passos
-        li
-          .uk-card.uk-margin.uk-flex.uk-flex-middle
-            div.uk-responsive-width
-              img(src=item.img alt='' class="uk-responsive-width")
-            div.uk-width-1-2
-              .uk-card-body
-                h3.uk-text-secondary
-                  img(src='src/img/aspas.svg' alt='')
-                p.uk-text-primary=item.text
-                div
-                  h4.uk-text-bold.uk-text-primary.uk-margin-remove=item.name
-                  span.uk-text-secondary Médico
-            
-    
+        li.uk-flex.uk-flex-middle.uk-text-center
+          blockquote.uk-position-relative.uk-margin-remove.uk-padding-large.uk-padding-remove-vertical(cite="#")
+            h3.uk-position-left.block
+              img(src='src/img/aspas.svg' alt='')
+            p.uk-margin-large-top=item.text
+            h4.uk-bold.uk-margin-remove=item.name
+            footer.uk-text-primary Médico
+    a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-previous.uk-slidenav(href='#' uk-slidenav-previous='' uk-slideshow-item='previous')
+    a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav-next.uk-slidenav(href='#' uk-slidenav-next='' uk-slideshow-item='next')
+    ul.uk-dotnav.uk-flex-center.uk-margin
+      li.uk-active(uk-slideshow-item='0')
+        a(href='#') Item 1
+      li(uk-slideshow-item='1')
+        a(href='#') Item 2
+      li(uk-slideshow-item='2')
+        a(href='#') Item 3

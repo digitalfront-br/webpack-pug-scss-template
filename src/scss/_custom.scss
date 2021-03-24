@@ -1,22 +1,48 @@
 html {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.55;
-  -webkit-text-size-adjust: 100%;
-  color: #535780;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.55;
+	-webkit-text-size-adjust: 100%;
+	color: #535780;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 ::selection {
 	background: $global-secondary-background;
 	color: $global-muted-background;
 	text-shadow: none;
 }
+.block img {
+	width: 60px;
+	margin-left: 30px;
+	margin-top: 30px;
+	filter: opacity(0.2);
+}
+.text-dark {
+	font-size: 1.7rem;
+	color: #250b4e !important;
+}
+.cadastre-m {
+	padding: 0 16px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 12px;
+}
+.login-m {
+	padding: 0 16px;
+}
+.veja {
+	font-size: 12px;
+	font-weight: 500;
+}
 .uk-light {
-  .uk-logo svg{
-    fill: #fff;
-  }
+	.uk-logo svg {
+		fill: #fff;
+	}
+	.icone svg {
+		fill: #46277a;
+	}
 	.uk-navbar-nav > li {
 		margin-left: 15px;
 		a {
@@ -30,10 +56,18 @@ html {
 		}
 	}
 }
+.partnes img {
+	width: auto;
+	max-height: 51px;
+	filter: grayscale(1);
+}
 .uk-dark {
-  .uk-logo svg{
-    fill: $global-primary-background;
-  }
+	.uk-logo svg {
+		fill: $global-primary-background;
+	}
+	.icone svg {
+		fill: #fff;
+	}
 	.uk-navbar-nav > li {
 		margin-left: 15px;
 		a {
@@ -48,7 +82,7 @@ html {
 	}
 }
 .reserva {
-	margin-bottom: -30% !important;
+	margin-bottom: -200px !important;
 }
 hr.uk-text-primary {
 	width: 40px;
@@ -57,13 +91,19 @@ hr.uk-text-primary {
 }
 
 .uk-grid-arrow > :not(.uk-first-column)::before {
-  content: "->";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  font-size: 20px;
+	content: "->";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	font-size: 20px;
 }
 .uk-icon-button {
 	width: 50px;
 	height: 50px;
+}
+
+@media (max-width: 960px) {
+	.margin-reserva-top {
+		margin-top: 135px !important;
+	}
 }
