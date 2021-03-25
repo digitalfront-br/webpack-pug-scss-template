@@ -1,10 +1,10 @@
-section.uk-section.uk-container(uk-slider='')
+section.uk-section.uk-container(uk-slider='', uk-scrollspy="cls: uk-animation-fade; repeat: true")
   .uk-container.uk-flex.uk-flex-between
-    div
+    div.uk-width-1-1
       p.uk-text-secondary Confira nossos parceiros
-      div.uk-margin-bottom
+      div.uk-margin-bottom.uk-flex.uk-flex-center(class='uk-flex-left@m')
         hr.uk-text-primary(class="uk-text-center@s")
-    div
+    div(class='uk-visible@m uk-width-small')
       a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small.uk-margin-small-right(href='#'  uk-slider-item='previous')
         span(uk-icon='icon: arrow-left; ratio: 1')
       a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small(href='#'  uk-slider-item='next')
@@ -27,4 +27,11 @@ section.uk-section.uk-container(uk-slider='')
         img(src='src/img/img11.png' alt='')
       li
         img(src='src/img/img12.png' alt='')
+  .uk-container(class='uk-hidden@m')
+    div.uk-flex.uk-flex-center.uk-margin-top
+      div
+        a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small.uk-margin-small-right(href='#'  uk-slider-item='previous')
+          span(uk-icon='icon: arrow-left; ratio: 1')
+        a.uk-icon-button.uk-text-primary.uk-background-default.uk-box-shadow-small(href='#'  uk-slider-item='next')
+          span(uk-icon='icon: arrow-right; ratio: 1')
     
