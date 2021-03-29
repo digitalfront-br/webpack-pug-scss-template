@@ -1,54 +1,16 @@
-header(class="uk-box-shadow-small uk-padding-small uk-padding-remove-horizontal uk-navbar-sticky uk-dark uk-background-default", uk-scrollspy="cls: uk-animation-fade; repeat: true", uk-sticky)
+header(class="", uk-scrollspy="cls: uk-animation-fade; repeat: true", uk-sticky="cls-active: uk-box-shadow-small uk-background-default uk-padding-small uk-padding-remove-horizontal; cls-inactive: uk-background-default uk-padding-small uk-padding-remove-horizontal; top: 300")
   .uk-container
     nav.uk-navbar
       .uk-navbar-left
         a.uk-logo(href='/', class='uk-hidden@m')
-          img.uk-margin-small-right(uk-svg="", style="width: 120px" src='src/img/logo.svg')
+          h3.uk-margin-remove.uk-text-normal
+            span.uk-text-primary.uk-h4 .
+            |sccap
         a.uk-logo(href='/', class='uk-visible@m')
-          img.uk-margin-small-right(uk-svg="", style="width: 220px" src='src/img/logo.svg')
+          h3.uk-margin-remove.uk-text-normal
+            span.uk-text-primary.uk-h4 .
+            |sccap
       .uk-navbar-right
-        a.uk-button.uk-button-default.uk-border-pill.uk-icon.login-m.icone(href='/', class='uk-hidden@m')
-          img(uk-svg="", src='src/img/user.svg' alt='')
-        a.uk-button.uk-button-default.uk-border-pill.uk-icon.cadastre-m(href='/', class='uk-hidden@m') Cadastre-se
         .uk-navbar-item(class='uk-visible@m')
-          a.uk-button.uk-button-default.uk-border-pill.uk-icon.icone(href='/') 
-            img.uk-margin-small-right(uk-svg="", src='src/img/user.svg' alt='')
-            |Login
-        .uk-navbar-item(class='uk-visible@m')
-          a.uk-button.uk-button-default.uk-border-pill.uk-icon(href='/') Cadastre-se
-section(uk-scrollspy="cls: uk-animation-fade; repeat: true", class="uk-section uk-section-small uk-background-primary")
-  .uk-container
-    include ./slideshow.pug
-          
-//- header.uk-sticky(uk-sticky="animation: uk-animation-slide-top; top: 300; cls-inactive: uk-background-primary uk-light; cls-active: uk-box-shadow-small uk-navbar-sticky uk-dark uk-background-default")
-//-   .uk-container
-//-     nav.uk-navbar
-//-       .uk-navbar-item.uk-flex.uk-flex-between(class="uk-hidden@s")
-//-         div
-//-           a.uk-logo(href='../')
-//-             img.uk-margin-small-right(uk-svg="", style="width: 130px" src='src/img/logo.svg')
-//-         div
-//-           ul.uk-navbar-nav
-//-             li
-//-               a(class="uk-button uk-button-default", href='../pro') 
-//-                 span(uk-icon='icon: user; ratio: 0.8')
-//-             li
-//-               a(class="uk-button uk-button-default", href='./') Cadastre-se
-//-       .uk-navbar-left(class="uk-visible@s")
-//-         .uk-navbar-item
-//-           a.uk-logo(href='../')
-//-             img.uk-margin-small-right(uk-svg="", src='src/img/logo.svg')
-//-       .uk-navbar-right(class="uk-visible@s")
-//-         .uk-navbar-item
-//-           ul.uk-navbar-nav
-//-             li
-//-               a(class="uk-button uk-button-default", href='../pro') 
-//-                 span(uk-icon='icon: user; ratio: 0.8')
-//-             li
-//-               a(class="uk-button uk-button-default", href='./') Cadastre-se
-//- .uk-position-relative
-//-   div(class="uk-section uk-background-primary")
-//-     .uk-container
-//-       include ./slideshow.pug
-  
-      
+          a.uk-button.uk-button-default.uk-border-pill.uk-icon(href='/') Crie uma conta
+include ./slideshow.pug

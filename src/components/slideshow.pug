@@ -1,16 +1,12 @@
-section.uk-flex.uk-flex-between.uk-flex-middle.uk-background-cover.uk-grid-small.uk-grid(uk-grid='', uk-scrollspy="cls: uk-animation-fade; repeat: true")
-  .uk-width-1-1.uk-light(class="uk-visible@m")
-    hr(style="width: 40px")
-  .uk-width-1-1.uk-light(class='uk-width-1-2@m')
-    h1.uk-text-bold.uk-heading-small Trabalhe nos melhores hospitais do Brasil
-    p
-      | Garanta sua vaga de trabalho usando apenas uma única ferramenta
-    div.uk-flex.uk-flex-between.uk-flex-middle.uk-padding.uk-padding-remove-horizontal.uk-child-width-auto
-      div.uk-width-expand(class="uk-text-left@m")
-        a.uk-button.uk-button-secondary.uk-button-large.uk-text-bold.uk-border-pill(href="")  Cadastre-se
-      div(class="uk-visible@m")
-        a.uk-button.uk-link-text.uk-text-small.uk-text-uppercase.veja.uk-border-pill(href="#passos", uk-scroll)  
-          span.uk-margin-small-right(uk-icon='icon: arrow-down; ratio: 1')
-          | Veja como é simples
-  .uk-width-1-1.uk-light(class='uk-width-1-2@m')
-    img(src="src/img/img1.png", class="reserva",alt="")
+section(uk-scrollspy="cls: uk-animation-fade; repeat: true", class="uk-section uk-section-small uk-background-muted")
+  .uk-container
+    section.uk-section.uk-section-large
+      .uk-container.uk-container-small
+        h1 Album example
+        p.uk-text-large
+          | This is a text that describes the album, its creator and something that you want to tell that is attractive.
+        div(data-uk-margin='')
+          .uk-button.uk-button-primary.uk-first-column
+            | CALL TO ACTION
+          a.uk-button.uk-button-default(href='#modal-center' data-uk-toggle='' aria-expanded='false') Open Modal
+          a.uk-button.uk-button-default(href='#modal-media-vimeo' data-uk-toggle='' aria-expanded='false') Vimeo
