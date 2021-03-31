@@ -1,4 +1,4 @@
-header(class="", uk-scrollspy="cls: uk-animation-fade; repeat: true", uk-sticky="cls-active: uk-box-shadow-small uk-background-default uk-padding-small uk-padding-remove-horizontal; cls-inactive: uk-background-default uk-padding-small uk-padding-remove-horizontal; top: 300")
+header(uk-scrollspy="cls: uk-animation-fade; repeat: true", uk-sticky="cls-active:  uk-background-default ; cls-inactive: uk-background-default ; top: 300")
   .uk-container
     nav.uk-navbar
       .uk-navbar-left
@@ -11,6 +11,5 @@ header(class="", uk-scrollspy="cls: uk-animation-fade; repeat: true", uk-sticky=
             span.uk-text-primary.uk-h4 .
             |sccap
       .uk-navbar-right
-        .uk-navbar-item(class='uk-visible@m')
-          a.uk-button.uk-button-default.uk-border-pill.uk-icon(href='/') Crie uma conta
-include ./slideshow.pug
+        .uk-navbar-item
+          a.uk-button.uk-button-primary.uk-border-rounded(href='/') Crie uma conta

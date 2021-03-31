@@ -4,16 +4,17 @@ html(lang='pt-br')
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
-    script(src='https://unpkg.com/feather-icons')
-    title Document
+    title SCCAP
   body(class="uk-text-center uk-text-left@m")
     include ./components/header.pug
-    include ./components/passos.pug
+    include ./components/section1.pug
+    include ./components/section5.pug
+    include ./components/section2.pug
+    hr
+    include ./components/section3.pug
     include ./components/benefits.pug
-    include ./components/partnes.pug
+    include ./components/section4.pug
     include ./components/testimonial.pug
     include ./components/footer.pug
     script(src='https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js')
     script(src='https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js')
-    script.
-      feather.replace({'stroke-width': 1, width: 20 })

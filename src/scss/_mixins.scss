@@ -7,6 +7,11 @@
 }
 @mixin hook-button() {
 	text-transform: none;
+	padding: 0 24px 0;
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: "Ubuntu";
+	letter-spacing: 0.5px;
 }
 
 @mixin hook-button-default() {
