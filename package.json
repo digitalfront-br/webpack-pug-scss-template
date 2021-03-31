@@ -10,6 +10,7 @@
     "babel-loader": "^8.0.6",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "css-loader": "^3.4.2",
+    "feather-icons": "^4.28.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
@@ -18,13 +19,14 @@
     "sass-loader": "^8.0.1",
     "style-loader": "^1.1.2",
     "terser-webpack-plugin": "^2.3.2",
+    "uikit": "^3.6.18",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "workbox-webpack-plugin": "^4.3.1"
   },
   "scripts": {
-    "build": "webpack --mode=production",
-    "build:dev": "webpack --mode=development",
-    "server:dev": "webpack-dev-server --host 0.0.0.0"
+    "prod": "webpack --mode=production",
+    "dev": "webpack --mode=development",
+    "server": "webpack-dev-server --host 0.0.0.0"
   }
 }
