@@ -1,24 +1,16 @@
 section.uk-section.uk-section-muted(uk-scrollspy="cls: uk-animation-fade; repeat: true")
   .uk-container
-    div.uk-width-1-1
-      p.uk-text-secondary Vantagens Dr. Recruta
-      div.uk-margin-bottom.uk-flex.uk-flex-center(class='uk-flex-left@m')
-        hr.uk-text-primary(class="uk-text-center@s")
-  .uk-container
     .uk-grid(uk-grid='')
-      .uk-width-1-1.uk-light
-        hr(style="width: 40px")
-      .uk-width-1-1.uk-margin-remove(class='uk-width-1-2@s')
-        img(src="src/img/img10.png", class="reserva2",alt="")
       .uk-width-1-1(class='uk-width-1-2@s')
-        h2.uk-text-bold.uk-h1.uk-text-primary.uk-margin-medium-bottom.text-dark Simplificamos o processo para você ser encontrado mais rápido
+        h2.uk-text-bold.uk-h1.uk-text-primary.uk-margin-medium-bottom.text-dark Confira as vantagens.
         div
-          - var benefits = [{icon: "src/img/5.svg", id: 1, title:"Totalmente gratuito", text: "Sem qualquer custo, do cadastro à contratação."}, {icon: "src/img/6.svg", id: 2, title:"Processo de recrutamento digital", text: "Entrevistas e repositório de documentos 100% digitais."}, {icon: "src/img/1.svg", id: 3, title:"As vagas encontram você", text: "Preencha seu perfil uma vez e os recrutadores te encontram."}]
+          - var benefits = [{icon: "src/img/icons/icone4.svg", id: 1, text: "Abertura de CNPJ Gratuita"}, {icon: "src/img/icons/icone3.svg", id: 2, text: "Processo 100% digital"}, {icon: "src/img/icons/icone2.svg", id: 3, text: "Pagamento de impostos em base reduzida"},  {icon: "src/img/icons/icone1.svg", id: 4, text: "Praticidade, transparência e segurança"}]
           each item in benefits
             div.uk-position-relative.uk-grid-small.uk-margin-medium-bottom(uk-grid="")
-              div(class="uk-width-1-5@m uk-width-1-1")
-                span.uk-h2.uk-text-light.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small.uk-margin-right
+              div
+                span.uk-margin-right
                   img.icone( src=item.icon alt='')
-              div(class="uk-width-4-5@m uk-width-1-1")
-                h3.uk-text-bold.uk-text-primary.uk-margin-remove=item.title
+              div.uk-flex.uk-flex-middle(class="uk-width-4-5@m uk-width-1-1")
                 p.uk-margin-remove=item.text
+      .uk-width-1-1.uk-margin-remove(class='uk-width-1-2@s')
+        img(src="src/img/img3.png", class="reserva2",alt="")

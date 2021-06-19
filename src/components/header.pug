@@ -7,15 +7,17 @@ header(class="uk-box-shadow-small uk-padding-small uk-padding-remove-horizontal 
         a.uk-logo(href='/', class='uk-visible@m')
           img.uk-margin-small-right(uk-svg="", style="width: 220px" src='src/img/logo.svg')
       .uk-navbar-right
+        ul.uk-navbar-nav
+          li
+            a(href='/', class='uk-visible@m') Abrir empresa grátis
+          li
+            a(href='/', class='uk-visible@m') Trocar de contador
         a.uk-button.uk-button-default.uk-border-pill.uk-icon.login-m.icone(href='/', class='uk-hidden@m')
           img(uk-svg="", src='src/img/user.svg' alt='')
-        a.uk-button.uk-button-default.uk-border-pill.uk-icon.cadastre-m(href='/', class='uk-hidden@m') Cadastre-se
         .uk-navbar-item(class='uk-visible@m')
           a.uk-button.uk-button-default.uk-border-pill.uk-icon.icone(href='/') 
             img.uk-margin-small-right(uk-svg="", src='src/img/user.svg' alt='')
             |Login
-        .uk-navbar-item(class='uk-visible@m')
-          a.uk-button.uk-button-default.uk-border-pill.uk-icon(href='/') Cadastre-se
 section(uk-scrollspy="cls: uk-animation-fade; repeat: true", class="uk-section uk-section-small uk-background-primary")
   .uk-container
     include ./slideshow.pug

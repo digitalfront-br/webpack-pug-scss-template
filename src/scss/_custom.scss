@@ -61,6 +61,19 @@ html {
 	max-height: 51px;
 	filter: grayscale(1);
 }
+.linha-vertical {
+	height: 30px;
+	width: 1px;
+	background: $global-muted-background;
+}
+.linha-reta {
+	position: absolute;
+	width: 75%;
+	border-bottom: 1px solid #000;
+}
+.uk-logo {
+	color: #1b8202;
+}
 .uk-dark {
 	.uk-logo svg {
 		fill: $global-primary-background;
@@ -71,7 +84,7 @@ html {
 	.uk-navbar-nav > li {
 		margin-left: 15px;
 		a {
-			border: 1px solid $global-primary-background;
+			// border: 1px solid $global-primary-background;
 			color: $global-primary-background;
 			min-height: 30px;
 			text-transform: capitalize;
@@ -82,7 +95,13 @@ html {
 	}
 }
 .reserva {
-	margin-bottom: -200px !important;
+	margin-bottom: -40px !important;
+}
+.texto-escuro {
+	color: #127d34 !important;
+	span {
+		color: #fff !important;
+	}
 }
 hr.uk-text-primary {
 	width: 40px;
