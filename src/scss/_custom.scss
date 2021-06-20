@@ -66,10 +66,27 @@ html {
 	width: 1px;
 	background: $global-muted-background;
 }
-.linha-reta {
-	position: absolute;
-	width: 75%;
-	border-bottom: 1px solid #000;
+.bloco-linha > div {
+	.linha-reta {
+		&::after {
+			color: transparent;
+			content: ".";
+			position: absolute;
+			width: 100%;
+			border-bottom: 1px solid #909291;
+		}
+	}
+	&:last-child {
+		.linha-reta {
+			&::after {
+				color: transparent;
+				content: ".";
+				position: absolute;
+				width: 0;
+				border-bottom: none;
+			}
+		}
+	}
 }
 .uk-logo {
 	color: #1b8202;

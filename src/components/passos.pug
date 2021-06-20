@@ -10,32 +10,34 @@ section.uk-section#passos(uk-scrollspy="cls: uk-animation-fade; repeat: true")
         li
           .uk-section.uk-section-small.uk-padding-remove-bottom
             div.uk-text-center
-              h3 Tenha um contador com a Dr. Finanças
+              h3 Faça a abertura do seu CNPJ
               p Veja como é simples!
-            div.uk-flex.uk-flex-between.uk-margin-large-top.uk-margin-large-bottom(class="uk-child-width-1-4@s" uk-grid)
+            div.bloco-linha.uk-flex.uk-flex-between.uk-margin-large-top.uk-margin-large-bottom(class="uk-child-width-1-4@s" uk-grid)
               - var passos = [{id: 1, title:"Envie dados e informações sobre o CNPJ."}, {id: 2, title:"Realize a contratação do plano."}, {id: 3, title:"Acompanhe o processo de forma 100% digital."}, {id: 4, title:"Pronto! Sua empresa está Criada no Dr. Finanças."}]
               each item in passos
                 div.uk-position-relative.uk-text-center
-                  div
-                    span.uk-h4.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small(class="uk-visible@s")=item.id
-                    span.uk-h4.uk-icon-button.uk-background-primary.uk-light.uk-padding-small(class="uk-hidden@s")=item.id+'º'
+                  div.linha-reta(class="uk-visible@s")
+                    span.uk-h4.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small=item.id
+                  div(class="uk-hidden@s")
+                    span.uk-h4.uk-icon-button.uk-background-primary.uk-light.uk-padding-small=item.id+'º'
                   span(class="uk-visible@s") |
                   p=item.title
                   span(class="uk-hidden@s" uk-icon='icon: arrow-down; ratio: 1.3')
             div.uk-width-expand.uk-text-center
-              a.uk-button.uk-button-secondary.uk-button-large.uk-text-bold.uk-border-pill(href="")  Quero Ter um contador
+              a.uk-button.uk-button-secondary.uk-button-large.uk-text-bold.uk-border-pill(href="")  Abrir empresa grátis
         li.uk-active
           .uk-section.uk-section-small.uk-padding-remove-bottom
             div.uk-text-center
               h3 Troca de contador grátis é com a Dr. Finanças
               p Veja como é simples!
-            div.uk-flex.uk-flex-between.uk-margin-large-top.uk-margin-large-bottom(class="uk-child-width-1-4@s" uk-grid)
+            div.bloco-linha.uk-flex.uk-flex-between.uk-margin-large-top.uk-margin-large-bottom(class="uk-child-width-1-4@s" uk-grid)
               - var passos = [{id: 1, title:"Envie dados e informações sobre o CNPJ."}, {id: 2, title:"Realize a contratação do plano."}, {id: 3, title:"Acompanhe o processo de forma 100% digital."}, {id: 4, title:"Pronto! Sua empresa está migrada para o Dr. Finanças."}]
               each item in passos
                 div.uk-position-relative.uk-text-center
-                  div
-                    span.uk-h4.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small(class="uk-visible@s")=item.id
-                    span.uk-h4.uk-icon-button.uk-background-primary.uk-light.uk-padding-small(class="uk-hidden@s")=item.id+'º'
+                  div.linha-reta(class="uk-visible@s")
+                    span.uk-h4.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small=item.id
+                  div(class="uk-hidden@s")
+                    span.uk-h4.uk-icon-button.uk-background-primary.uk-light.uk-padding-small=item.id+'º'
                   span(class="uk-visible@s") |
                   p=item.title
                   span(class="uk-hidden@s" uk-icon='icon: arrow-down; ratio: 1.3')

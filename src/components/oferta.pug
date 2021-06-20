@@ -4,12 +4,13 @@ section.uk-section.uk-background-primary.margin-reserva-top#passos(uk-scrollspy=
       h3.uk-text-center.uk-light O que oferecemos
   .uk-container
     div.uk-child-width-1-1.uk-grid-arrow(class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card")
-      - var passos = [{id: 1, text: "Contabilidade Digital"}, {id: 2, text: "Solicitação de NF Online"}, {id: 3, text: "Suporte realizado por controladores"},{id: 4, text: "Todas obrigações fiscais e legais"}, {id: 5, text: "Emissão e cálculo de impostos e taxas"}, {id: 6, text: "Endereço Fiscal"}]
+      - var passos = [{icon: "src/img/icons/icone5.svg", id: 1, text: "Contabilidade Digital"}, {icon: "src/img/icons/icone11.svg", id: 2, text: "Solicitação de NF Online"}, {icon: "src/img/icons/icone7.svg", id: 3, text: "Suporte realizado por controladores"},{icon: "src/img/icons/icone9.svg", id: 4, text: "Todas obrigações fiscais e legais"}, {icon: "src/img/icons/icone8.svg", id: 5, text: "Emissão e cálculo de impostos e taxas"}, {icon: "src/img/icons/icone10.svg", id: 6, text: "Endereço Fiscal"}]
       each item in passos
         div 
           .uk-card.uk-border-rounded.uk-card-default.uk-card-body.uk-text-center(class="uk-display-block@s uk-display-flex@m")
             div
-              span.uk-h4.uk-margin-remove-bottom.uk-icon-button.uk-background-secondary.uk-light.uk-padding-small=item.id+'º'
+              span
+                img.icone( src=item.icon alt='')
             p=item.text
     div.uk-flex.uk-flex-center.uk-flex-middle.uk-padding.uk-padding-remove-horizontal.uk-child-width-auto(class="uk-visible@m")
       div.uk-margin-right(class="uk-text-left@m")

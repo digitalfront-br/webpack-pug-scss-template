@@ -6,11 +6,17 @@ section.uk-section.uk-section-muted(uk-scrollspy="cls: uk-animation-fade; repeat
         div
           - var benefits = [{icon: "src/img/icons/icone4.svg", id: 1, text: "Abertura de CNPJ Gratuita"}, {icon: "src/img/icons/icone3.svg", id: 2, text: "Processo 100% digital"}, {icon: "src/img/icons/icone2.svg", id: 3, text: "Pagamento de impostos em base reduzida"},  {icon: "src/img/icons/icone1.svg", id: 4, text: "Praticidade, transparência e segurança"}]
           each item in benefits
-            div.uk-position-relative.uk-grid-small.uk-margin-medium-bottom(uk-grid="")
+            div.uk-position-relative.uk-grid-small.uk-margin-medium-bottom(class="uk-visible@s", uk-grid="")
               div
-                span.uk-margin-right
+                span(class="uk-margin-right@m")
                   img.icone( src=item.icon alt='')
-              div.uk-flex.uk-flex-middle(class="uk-width-4-5@m uk-width-1-1")
+              div.uk-flex.uk-flex-middle
+                p.uk-margin-remove=item.text
+            div.uk-flex.uk-flex-column.uk-flex-middle.uk-margin-medium-bottom(class="uk-hidden@s")
+              div
+                span(class="uk-margin-right@m")
+                  img.icone( src=item.icon alt='')
+              div.uk-flex.uk-flex-middle
                 p.uk-margin-remove=item.text
       .uk-width-1-1.uk-margin-remove(class='uk-width-1-2@s')
         img(src="src/img/img3.png", class="reserva2",alt="")
